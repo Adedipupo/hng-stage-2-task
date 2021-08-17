@@ -93,14 +93,14 @@ const submitHandler = () =>{}
                  </h4>
 
 
-                {/* <Row className="py-3">
+                <Row className="py-3">
                     <Col>
                         Have an Account?{" "}
-                        <Link to={redirect ? `/login/redirect=${redirect}` : "/register "}>
+                        {/* <Link to={redirect ? `/login/redirect=${redirect}` : "/register "}>
                             Login
-                        </Link>
+                        </Link> */}
                     </Col>
-                </Row> */}
+                </Row>
             </Form>
         </FormContainer>
     );

@@ -86,6 +86,8 @@ const submitHandler = () =>{}
                     Submit
                 </Button>
 
+                <br />
+                <br />
                 <h3 style={{ fontFamily: 'monospace', textAlign: 'center', margin: 'auto' }}>
                 You can also visit <a href="http://internship.zuri.team">Zuri Team </a>
                  </h3>

@@ -1,0 +1,8 @@
+{
+  "name": "hng-stage-2-task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Adedipupo/hng-stage-2-task.git",
+  "author": "Benedict <jokanolaadedipupo@gmail.com>",
+  "license": "MIT"
+}

@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 // create a blog post
 exports.createBlog = asyncHandler(async (req, res) => {
   try {
-    const { title, body, comments } = req.body;
+    const { user, email, comments } = req.body;
 
     const titleExists = await BlogModel.findOne({ title });
 

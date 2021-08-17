@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 
 const blogSchema = mongoose.Schema({
-    title: {
+    user: {
         type: 'String',
         unique: true,
         required: true
     },
-    body: {
+    email: {
         type: 'String',
         required: true,
         unique: true

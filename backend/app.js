@@ -1,7 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const dotenv = require('dotenv');
-const indexRouter = require('./routes/index.js');
+const indexRouter = require('../routes/index.js.js');
 const { connectDB } = require('./config/db.js');
 
 dotenv.config();
@@ -10,7 +10,7 @@ const app = express();
 app.use(morgan('dev'));
 app.use(express.json())
 
-const port = process.env.PORT || 8081;
+const port = process.env.PORT || 5000;
 
 
 

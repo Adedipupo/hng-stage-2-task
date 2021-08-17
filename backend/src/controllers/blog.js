@@ -7,23 +7,16 @@ exports.createBlog = asyncHandler(async (req, res) => {
   try {
     const { user, email, comments } = req.body;
 
-    const titleExists = await BlogModel.findOne({ title });
-
-    if (titleExists) {
-      res.status(400);
-      throw new Error("Title already exists");
-    }
-
     const blog = await BlogModel.create({
-      title,
-      body,
+      user,
+      email,
       comments,
     });
     if (blog) {
       res.status(200).json({
         _id: blog._id,
-        title: blog.title,
-        body: blog.body,
+        user: blog.user,
+        email: blog.email,
         comments: blog.comments,
       });
     } else {

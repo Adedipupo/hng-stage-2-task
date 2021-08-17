@@ -2,20 +2,19 @@ const mongoose = require('mongoose');
 
 const blogSchema = mongoose.Schema({
     user: {
-        type: 'String',
+        type: String,
+        required: true,
+        unique: true,
+    },
+    email: {
+        type: String,
         unique: true,
         required: true
     },
-    email: {
-        type: 'String',
-        required: true,
-        unique: true
-    },
-    comments: [
-        {
-          comment: String,
-        },
-      ],
+    comments: {
+    type: String,
+    required: true
+},
 }, { timestamps: true })
 
 

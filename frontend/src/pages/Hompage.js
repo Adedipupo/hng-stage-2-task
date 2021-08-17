@@ -7,6 +7,7 @@ import first from './first.png'
 import two from './two.png'
 import third from './third.png'
 import './styles.css'
+import contact from '../components/contact';
 
 const Hompage = () => {
     return (
@@ -88,11 +89,28 @@ const Hompage = () => {
                     <section>
                         <Container>
                             <Row>
-                                <Col xs={12}></Col>
+                                <Col xs={12} md={4} lg={6}>
+                                <Card style={{ width: '100%' }}>
+                                    <Card.Img variant="top" src={third} />
+                                    <Card.Body>
+                                        <Card.Title>Job Finder</Card.Title>
+                                        <Card.Text>
+                                            A job portal application for job seekers and employers. Employers can post jobs and job seekers can apply for jobs..
+                                        </Card.Text>
+                                    </Card.Body>
+                                    <ListGroup className="list-group-flush">
+                                        <ListGroupItem>React.js, Redux, Mongodb. Express.js.</ListGroupItem>
+                                    </ListGroup>
+                                    <Card.Body>
+                                        <Card.Link href="#">https://job-finder-2.netlify.app/</Card.Link>
+                                    </Card.Body>
+                                </Card>
+                                </Col>
                             </Row>
                         </Container>
                     </section>
                 </section>
+                <contact/>
             </main>
             <Footer />
         </>

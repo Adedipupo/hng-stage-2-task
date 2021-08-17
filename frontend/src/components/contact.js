@@ -88,9 +88,9 @@ const submitHandler = () =>{}
 
                 <br />
                 <br />
-                <h3 style={{ fontFamily: 'monospace', textAlign: 'center', margin: 'auto' }}>
+                <h4 style={{ fontFamily: 'monospace', textAlign: 'center', margin: 'auto' }}>
                 You can also visit <a href="http://internship.zuri.team">Zuri Team </a>
-                 </h3>
+                 </h4>
 
 
                 {/* <Row className="py-3">

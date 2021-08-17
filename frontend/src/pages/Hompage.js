@@ -25,10 +25,10 @@ const Hompage = () => {
                     <h3 style={{ fontFamily: 'monospace', textAlign: 'center', marginTop: '2rem' }}>Who I am</h3>
                     <Container className="pt-3">
                         <Row>
-                            <Col xs={6}>
+                            <Col xs={12} md={6} lg={6}>
                                 <img alt="me" src={me} style={{ width: '70%', height: '100%' }} />
                             </Col>
-                            <Col xs={6}>
+                            <Col xs={12} md={6} lg={6}>
                                 <Card style={{ width: '100%' }}>
                                     <Card.Body>
                                         <Card.Title>About Me</Card.Title>
@@ -50,7 +50,7 @@ const Hompage = () => {
                     <h3 style={{ fontFamily: 'monospace', textAlign: 'center', marginTop: '2rem' }}>Projects</h3>
                     <Container className="pt-3">
                         <Row>
-                            <Col xs={6}>
+                            <Col xs={12} md={6} lg={6}>
                                 <Card style={{ width: '100%' }}>
                                     <Card.Img variant="top" src={first} />
                                     <Card.Body>
@@ -63,11 +63,11 @@ const Hompage = () => {
                                         <ListGroupItem>Express.js, React,Redux, Mongodb.</ListGroupItem>
                                     </ListGroup>
                                     <Card.Body>
-                                        <Card.Link href="#">https://myshopwebapp.herokuapp.com/</Card.Link>
+                                    <a href="https://myshopwebapp.herokuapp.com">https://myshopwebapp.herokuapp.com</a>
                                     </Card.Body>
                                 </Card>
                             </Col>
-                            <Col xs={6}>
+                            <Col xs={12} md={6} lg={6}>
                                 <Card style={{ width: '100%' }}>
                                     <Card.Img variant="top" src={two} />
                                     <Card.Body>
@@ -80,7 +80,7 @@ const Hompage = () => {
                                         <ListGroupItem>React.js, Redux, Mongodb. Express.js.</ListGroupItem>
                                     </ListGroup>
                                     <Card.Body>
-                                        <Card.Link href="#">https://job-finder-2.netlify.app/</Card.Link>
+                                    <a href="https://job-finder-2.netlify.app">https://job-finder-2.netlify.app</a>
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -102,7 +102,7 @@ const Hompage = () => {
                                         <ListGroupItem>React.js, Redux, Mongodb. Express.js.</ListGroupItem>
                                     </ListGroup>
                                     <Card.Body>
-                                        <Card.Link href="#">https://job-finder-2.netlify.app/</Card.Link>
+                                    <a href="https://job-finder-2.netlify.app">https://job-finder-2.netlify.app</a>
                                     </Card.Body>
                                 </Card>
                                 </Col>

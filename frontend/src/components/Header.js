@@ -15,7 +15,7 @@ const Header = () => {
                             height="30"
                             className="d-inline-block align-top"
                         />{' '}
-                        MyResume
+                        MyZuriCV
                     </Navbar.Brand>
                     <Nav className="mr-auto" style={{color: 'white'}}>
                     <Nav.Link href='#href'>Home</Nav.Link>

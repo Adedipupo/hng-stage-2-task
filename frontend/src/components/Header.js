@@ -4,7 +4,7 @@ import logo from './logo.jpeg'
 
 const Header = () => {
     return (
-        <header>
+        <header className="mb-0">
             <Navbar bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand href="#home">
@@ -17,7 +17,7 @@ const Header = () => {
                         />{' '}
                         Portfolio
                     </Navbar.Brand>
-                    <Nav className="ms-auto">
+                    <Nav className="mr-auto" style={{color: 'white'}}>
                     <Nav.Link href='#href'>Home</Nav.Link>
                     </Nav>
                 </Container>

@@ -53,46 +53,45 @@ const Hompage = () => {
                                 <Card style={{ width: '100%' }}>
                                     <Card.Img variant="top" src={first} />
                                     <Card.Body>
-                                        <Card.Title>Card Title</Card.Title>
+                                        <Card.Title>MyShop</Card.Title>
                                         <Card.Text>
-                                            Some quick example text to build on the card title and make up the bulk of
-                                            the card's content.
+                                            An ecommerce web application where users can purchase/make orders
                                         </Card.Text>
                                     </Card.Body>
                                     <ListGroup className="list-group-flush">
-                                        <ListGroupItem>Cras justo odio</ListGroupItem>
-                                        <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-                                        <ListGroupItem>Vestibulum at eros</ListGroupItem>
+                                        <ListGroupItem>Express.js, React,Redux, Mongodb.</ListGroupItem>
                                     </ListGroup>
                                     <Card.Body>
-                                        <Card.Link href="#">Card Link</Card.Link>
-                                        <Card.Link href="#">Another Link</Card.Link>
+                                        <Card.Link href="#">https://myshopwebapp.herokuapp.com/</Card.Link>
                                     </Card.Body>
                                 </Card>
                             </Col>
                             <Col xs={6}>
                                 <Card style={{ width: '100%' }}>
-                                    <Card.Img variant="top" src={first} />
+                                    <Card.Img variant="top" src={two} />
                                     <Card.Body>
-                                        <Card.Title>Card Title</Card.Title>
+                                        <Card.Title>Job Finder</Card.Title>
                                         <Card.Text>
-                                            Some quick example text to build on the card title and make up the bulk of
-                                            the card's content.
+                                            A job portal application for job seekers and employers. Employers can post jobs and job seekers can apply for jobs..
                                         </Card.Text>
                                     </Card.Body>
                                     <ListGroup className="list-group-flush">
-                                        <ListGroupItem>Cras justo odio</ListGroupItem>
-                                        <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-                                        <ListGroupItem>Vestibulum at eros</ListGroupItem>
+                                        <ListGroupItem>React.js, Redux, Mongodb. Express.js.</ListGroupItem>
                                     </ListGroup>
                                     <Card.Body>
-                                        <Card.Link href="#">Card Link</Card.Link>
-                                        <Card.Link href="#">Another Link</Card.Link>
+                                        <Card.Link href="#">https://job-finder-2.netlify.app/</Card.Link>
                                     </Card.Body>
                                 </Card>
                             </Col>
                         </Row>
                     </Container>
+                    <section>
+                        <Container>
+                            <Row>
+                                <Col xs={12}></Col>
+                            </Row>
+                        </Container>
+                    </section>
                 </section>
             </main>
             <Footer />

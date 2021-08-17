@@ -7,7 +7,7 @@ import first from './first.png'
 import two from './two.png'
 import third from './third.png'
 import './styles.css'
-import contact from '../components/contact';
+import Contact from '../components/Contact';
 
 const Hompage = () => {
     return (
@@ -110,7 +110,7 @@ const Hompage = () => {
                         </Container>
                     </section>
                 </section>
-                <contact/>
+                <Contact/>
             </main>
             <Footer />
         </>

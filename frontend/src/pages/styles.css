@@ -19,3 +19,17 @@
   margin: auto;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .heroDiv {
+    border-radius: 2rem;
+    font-family: 'Courier New', 'Courier', 'monospace';
+    font-size: 0.1rem;
+    color: #fff;
+    background-color: rgb(75, 74, 72);
+    opacity: 0.9;
+    width: 90%;
+    margin-top: 6px;
+    margin: auto;
+    text-align: center;
+  }
+}

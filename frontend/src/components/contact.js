@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button, Row, Col, Form } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
-import Loader from "./Loader.js";
+// import { useDispatch, useSelector } from "react-redux";
+// import Loader from "./Loader.js";
 import Message from "./Message.js";
-import FormContainer from ".FormContainer.js";
+import FormContainer from "./FormContainer.js";
 // import { register } from "../actions/userActions.js";
 
 const Contact = ({ location, history }) => {
@@ -83,7 +83,7 @@ const submitHandler = () =>{}
                 </Form.Group>
 
                 <Button type="submit" variant="primary">
-                    Register
+                    Submit
                 </Button>
 
                 {/* <Row className="py-3">

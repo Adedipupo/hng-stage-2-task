@@ -10,7 +10,7 @@ import FormContainer from "./FormContainer.js";
 const Contact = ({ location, history }) => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    const [comments, setComments] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
     const [message, setMessage] = useState(null);
 

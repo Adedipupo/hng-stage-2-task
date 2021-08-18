@@ -25,11 +25,12 @@ exports.createBlog = asyncHandler(async (req, res) => {
       comments,
     });
     if (blog) {
-      res.status(200).json({
+      res.status(200).json({ data: {
         _id: blog._id,
         user: blog.user,
         email: blog.email,
         comments: blog.comments,
+      }
       });
     } else {
       res.status(400);

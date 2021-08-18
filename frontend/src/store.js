@@ -1,8 +1,11 @@
 const { createStore, combineReducers, applyMiddleware } = require('redux');
 const thunk = require("redux-thunk");
 const { composeWithDevTools } = require('redux-devtools-extension');
+const { userRegisterReducer } = require('./reducer/userReducer');
 
-const reducer = combineReducers({});
+const reducer = combineReducers({
+    userRegister: userRegisterReducer
+});
 
 const initialState = {}
 const middleware = [thunk];

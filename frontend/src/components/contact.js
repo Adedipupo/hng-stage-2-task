@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Button, Row, Col, Form } from "react-bootstrap";
-// import { useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 // import Loader from "./Loader.js";
 import Message from "./Message.js";
 import FormContainer from "./FormContainer.js";
-// import { register } from "../actions/userActions.js";
+import { register } from "../action/userAction.js";
 
 const Contact = ({ location, history }) => {
     const [name, setName] = useState("");
@@ -12,27 +12,17 @@ const Contact = ({ location, history }) => {
     const [comments, setComments] = useState("");
     const [message, setMessage] = useState(null);
 
-    // const dispatch = useDispatch();
-    // const userRegister = useSelector((state) => state.userRegister);
-    // const { loading, userInfo } = userRegister;
+    const dispatch = useDispatch();
+    const userRegister = useSelector((state) => state.userRegister);
+    const { loading,error, userInfo } = userRegister;
 
-    // const redirect = location.search ? location.search.split("=")[1] : "/";
-    // useEffect(() => {
-    //     if (userInfo) {
-    //         history.push(redirect);
-    //     }
-    // }, [history, userInfo, redirect]);
 
-    // const submitHandler = (e) => {
-    //     e.preventDefault();
-    //     if (password !== confirmPassword) {
-    //         setMessage("Password do not match");
-    //     } else {
-    //         dispatch(register(name, email, password));
-    //     }
-    // };
 
-    const submitHandler = () => { }
+    const submitHandler = (e) => {
+        e.preventDefault();
+            dispatch(register(name, email, comments));
+    };
+
     return (
         <FormContainer>
             <h3 style={{ fontFamily: 'monospace', textAlign: 'center', marginTop: '2rem' }}>Contact</h3>
@@ -77,9 +67,9 @@ const Contact = ({ location, history }) => {
 
                 <br />
                 <br />
-                <h4 style={{ fontFamily: 'monospace', textAlign: 'center', margin: 'auto' }}>
+                <h5 style={{ fontFamily: 'monospace', textAlign: 'center', margin: 'auto' }}>
                     You can also visit <a href="http://internship.zuri.team">Zuri Team </a>
-                </h4>
+                </h5>
 
             </Form>
         </FormContainer>

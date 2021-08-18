@@ -1,7 +1,7 @@
-const { createStore, combineReducers, applyMiddleware } = require('redux');
-const thunk = require("redux-thunk");
-const { composeWithDevTools } = require('redux-devtools-extension');
-const { userRegisterReducer } = require('./reducer/userReducer');
+import { createStore, combineReducers, applyMiddleware } from "redux";
+import thunk from "redux-thunk";
+import { composeWithDevTools } from "redux-devtools-extension";
+import { userRegisterReducer } from "./reducer/userReducer";
 
 const reducer = combineReducers({
     userRegister: userRegisterReducer
@@ -10,10 +10,11 @@ const reducer = combineReducers({
 const initialState = {}
 const middleware = [thunk];
 
-exports.store = createStore(
+const store = createStore(
   reducer,
   initialState,
   composeWithDevTools(applyMiddleware(...middleware))
 );
 
 
+export default store;

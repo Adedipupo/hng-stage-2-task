@@ -1,7 +1,7 @@
 import axios from "axios";
 import { USER_REGISTER_FAIL, USER_REGISTER_REQUEST, USER_REGISTER_SUCCESS } from "../constant/userConstant";
 
-export const register = (name, email, password) => async (dispatch) => {
+export const register = (name, email, comments) => async (dispatch) => {
     try {
       dispatch({ type: USER_REGISTER_REQUEST });
       const config = {
@@ -11,10 +11,11 @@ export const register = (name, email, password) => async (dispatch) => {
       };
   
       const { data } = await axios.post(
-        "/api/user/register",
-        { name, email, password },
+        "/api/v1/blog/create",
+        { name, email, comments },
         config
       );
+      console.log(data);
   
       dispatch({ type: USER_REGISTER_SUCCESS, payload: data });
   

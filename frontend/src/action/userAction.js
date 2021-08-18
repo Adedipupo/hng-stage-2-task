@@ -16,7 +16,6 @@ export const register = (name, email, comments) => async (dispatch) => {
             { user: name, email, comments },
             config
         );
-        console.log(data);
 
         dispatch({ type: USER_REGISTER_SUCCESS, payload: data });
         toast('🦄 Wow so easy!', {

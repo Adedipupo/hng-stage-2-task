@@ -11,7 +11,6 @@ const Contact = ({ location, history }) => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [comments, setComments] = useState("");
-    const [confirmPassword, setConfirmPassword] = useState("");
     const [message, setMessage] = useState(null);
 
     // const dispatch = useDispatch();
@@ -34,7 +33,7 @@ const Contact = ({ location, history }) => {
     //     }
     // };
 
-const submitHandler = () =>{}
+    const submitHandler = () => { }
     return (
         <FormContainer>
             <h3 style={{ fontFamily: 'monospace', textAlign: 'center', marginTop: '2rem' }}>Contact</h3>
@@ -62,23 +61,14 @@ const submitHandler = () =>{}
                     ></Form.Control>
                 </Form.Group>
 
-                <Form.Group controlId="password">
-                    <Form.Label>Password</Form.Label>
+                <Form.Group controlId="comments">
+                    <Form.Label>Comments</Form.Label>
                     <Form.Control
-                        type="password"
-                        placeholder="Enter password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                    ></Form.Control>
-                </Form.Group>
-
-                <Form.Group controlId="confirmPassword">
-                    <Form.Label>Confirm Password</Form.Label>
-                    <Form.Control
-                        type="confirmPassword"
-                        placeholder="Confirm Password"
-                        value={confirmPassword}
-                        onChange={(e) => setConfirmPassword(e.target.value)}
+                        as="textarea"
+                        placeholder="Enter Comments"
+                        style={{ height: '100px' }}
+                        value={comments}
+                        onChange={(e) => setComments(e.target.value)}
                     ></Form.Control>
                 </Form.Group>
 
@@ -89,8 +79,8 @@ const submitHandler = () =>{}
                 <br />
                 <br />
                 <h4 style={{ fontFamily: 'monospace', textAlign: 'center', margin: 'auto' }}>
-                You can also visit <a href="http://internship.zuri.team">Zuri Team </a>
-                 </h4>
+                    You can also visit <a href="http://internship.zuri.team">Zuri Team </a>
+                </h4>
 
 
                 <Row className="py-3">

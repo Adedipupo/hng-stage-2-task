@@ -7,8 +7,10 @@
   "license": "MIT",
   "scripts": {
     "start": "node backend/app.js",
-    "dev": "nodemon backend/app.js",
-    "test": "jest --watch"
+    "server": "nodemon backend/app.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "dependencies": {
     "dotenv": "^10.0.0",

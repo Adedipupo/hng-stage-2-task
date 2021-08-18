@@ -1,7 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const dotenv = require('dotenv');
-const indexRouter = require('../routes/index.js.js');
+const indexRouter = require('./routes/index.js');
 const { connectDB } = require('./config/db.js');
 
 dotenv.config();

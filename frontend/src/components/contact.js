@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Button, Row, Col, Form } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-// import Loader from "./Loader.js";
+import Loader from "./Loader.js";
 import Message from "./Message.js";
 import FormContainer from "./FormContainer.js";
 import { register } from "../action/userAction.js";
@@ -14,13 +14,14 @@ const Contact = ({ location, history }) => {
 
     const dispatch = useDispatch();
     const userRegister = useSelector((state) => state.userRegister);
-    const { loading,error, userInfo } = userRegister;
-
-
+    const { loading } = userRegister;
 
     const submitHandler = (e) => {
         e.preventDefault();
-            dispatch(register(name, email, comments));
+        dispatch(register(name, email, comments));
+        setName("");
+        setEmail("");
+        setComments("");
     };
 
     return (
@@ -28,8 +29,8 @@ const Contact = ({ location, history }) => {
             <h3 style={{ fontFamily: 'monospace', textAlign: 'center', marginTop: '2rem' }}>Contact</h3>
 
             {message && <Message variant="danger">{message}</Message>}
-            {/* {loading && <Loader />} */}
-            <Form onSubmit={submitHandler()}>
+            {loading && <Loader />}
+            <Form onSubmit={submitHandler}>
                 <Form.Group controlId="name">
                     <Form.Label>Name</Form.Label>
                     <Form.Control

@@ -25,9 +25,6 @@ exports.createBlog = asyncHandler(async (req, res) => {
       comments,
     });
 
-    console.log(blog);
-    console.log("***")
-
     if (blog) {
       res.status(200).json({ data: {
         _id: blog._id,

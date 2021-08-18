@@ -6,8 +6,8 @@
   "author": "Benedict <jokanolaadedipupo@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
+    "start": "node backend/app.js",
+    "dev": "nodemon backend/app.js",
     "test": "jest --watch"
   },
   "dependencies": {

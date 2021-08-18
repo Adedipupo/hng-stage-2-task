@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { Button, Row, Col, Form } from "react-bootstrap";
 // import { useDispatch, useSelector } from "react-redux";
 // import Loader from "./Loader.js";
@@ -82,15 +81,6 @@ const Contact = ({ location, history }) => {
                     You can also visit <a href="http://internship.zuri.team">Zuri Team </a>
                 </h4>
 
-
-                <Row className="py-3">
-                    <Col>
-                        Have an Account?{" "}
-                        {/* <Link to={redirect ? `/login/redirect=${redirect}` : "/register "}>
-                            Login
-                        </Link> */}
-                    </Col>
-                </Row>
             </Form>
         </FormContainer>
     );

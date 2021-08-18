@@ -6,6 +6,18 @@ const mongoose = require('mongoose');
 exports.createBlog = asyncHandler(async (req, res) => {
   try {
     const { user, email, comments } = req.body;
+    const userExists = await BlogModel.findOne({ user });
+
+    if (userExists) {
+      res.status(400);
+      throw new Error("You Already Submitted one before alaseju");
+    }
+    const emailExists = await BlogModel.findOne({ email });
+
+    if (emailExists) {
+      res.status(400);
+      throw new Error("You wan dey disguise abi or you no know you don submit one before");
+    }
 
     const blog = await BlogModel.create({
       user,

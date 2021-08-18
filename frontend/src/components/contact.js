@@ -72,7 +72,7 @@ const Contact = ({ location, history }) => {
                     ></Form.Control>
                 </Form.Group>
 
-                <Button type="submit" variant="primary">
+                <Button className="mt-1" type="submit" variant="primary">
                     Submit
                 </Button>
 

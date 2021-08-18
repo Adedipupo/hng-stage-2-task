@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import Loader from "./Loader.js";
-import Message from "./Message.js";
+// import Message from "./Message.js";
 import FormContainer from "./FormContainer.js";
 import { register } from "../action/userAction.js";
 
@@ -10,7 +10,7 @@ const Contact = ({ location, history }) => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [comments, setComments] = useState("");
-    const [message, setMessage] = useState(null);
+    // const [message, setMessage] = useState(null);
 
     const dispatch = useDispatch();
     const userRegister = useSelector((state) => state.userRegister);
@@ -28,7 +28,7 @@ const Contact = ({ location, history }) => {
         <FormContainer>
             <h3 style={{ fontFamily: 'monospace', textAlign: 'center', marginTop: '2rem' }}>Contact</h3>
 
-            {message && <Message variant="danger">{message}</Message>}
+            {/* {message && <Message variant="danger">{message}</Message>} */}
             {loading && <Loader />}
             <Form onSubmit={submitHandler}>
                 <Form.Group controlId="name">

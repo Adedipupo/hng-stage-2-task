@@ -16,7 +16,7 @@ const Header = () => {
                                 height="30"
                                 className="d-inline-block align-top"
                             />{' '}
-                            MyZuriCV
+                            Home
                         </Navbar.Brand>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -25,7 +25,7 @@ const Header = () => {
                             <Nav.Link href="#features"></Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#deets">Home</Nav.Link>
+                            <Nav.Link href="#deets">Me</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
